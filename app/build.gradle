@@ -68,4 +68,5 @@ dependencies {
     compile appDependencies.numberprogressbar
     compile appDependencies.butterknife
     compile appDependencies.rxandroid
+    compile(name: 'cmadsdk_base_world_V3.3.0', ext: 'aar')
 }
