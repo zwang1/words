@@ -72,6 +72,8 @@ dependencies {
     compile appDependencies.numberprogressbar
     compile appDependencies.butterknife
     compile appDependencies.rxandroid
+    compile files('libs/volley.jar')
+    compile 'com.android.support:support-v4:22.2.0'
     compile(name: 'cmadsdk_base_world_V3.3.0', ext: 'aar')
 
 }

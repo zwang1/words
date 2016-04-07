@@ -18,6 +18,7 @@ package com.dbychkov.words.app;
 
 import android.app.Application;
 
+import com.cmcm.adsdk.CMAdManager;
 import com.dbychkov.words.dagger.component.ApplicationComponent;
 import com.dbychkov.words.dagger.component.DaggerApplicationComponent;
 import com.dbychkov.words.dagger.module.ApplicationModule;
@@ -42,6 +43,7 @@ public class App extends Application {
         singleton = this;
         setUncaughtExceptionHandler();
         initApplicationComponent();
+        CMAdManager.applicationInit(this, "1377", "");
     }
 
     private ApplicationComponent applicationComponent;
