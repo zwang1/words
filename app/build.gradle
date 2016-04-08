@@ -74,6 +74,6 @@ dependencies {
     compile appDependencies.rxandroid
     compile files('libs/volley.jar')
     compile 'com.android.support:support-v4:22.2.0'
-    compile(name: 'cmadsdk_base_world_V3.3.0', ext: 'aar')
+    compile(name: 'cmadsdk_ext_world_all_V3.7.0', ext: 'aar')
 
 }
