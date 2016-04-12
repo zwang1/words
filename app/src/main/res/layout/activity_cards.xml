@@ -78,19 +78,7 @@
 
 
 
-    <LinearLayout
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <FrameLayout
-
-            android:id="@+id/big_ad_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:padding="2dp" />
     <com.dbychkov.words.widgets.RecyclerViewWithEmptyView
         android:id="@+id/list"
         android:layout_width="match_parent"
@@ -113,21 +101,32 @@
         android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-
-
-
-        <TextView
-            android:id="@+id/list_empty"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="140dp"
-            android:gravity="center_horizontal"
-            android:text="@string/empty_list_text"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/text_size_extra_large" />
+            android:orientation="vertical">
 
+            <FrameLayout
+
+                android:id="@+id/big_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="2dp" />
+
+
+            <TextView
+                android:id="@+id/list_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="140dp"
+                android:gravity="center_horizontal"
+                android:text="@string/empty_list_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_extra_large" />
+
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/test_cards_button"
