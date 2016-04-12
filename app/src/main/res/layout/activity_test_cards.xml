@@ -13,6 +13,16 @@
         android:layout_below="@+id/toolbar"
         android:layout_margin="20dp"/>
 
+    <FrameLayout
+        android:layout_above="@+id/knowButton"
+        android:id="@+id/big_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="2dp" >
+
+
+    </FrameLayout>
     <ImageView
         android:id="@+id/dontKnowButton"
         android:src="@drawable/ic_thumb_down_black_48dp"

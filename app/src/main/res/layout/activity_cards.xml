@@ -37,20 +37,6 @@
                     app:layout_collapseMode="pin"
                     app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
 
-                <FrameLayout
-
-                    android:id="@+id/big_ad_container"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:padding="2dp" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="test "/>
-                </FrameLayout>
-
 
                 <View
                     android:layout_width="match_parent"
@@ -86,20 +72,40 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <FrameLayout
+        android:layout_marginTop="100dp"
+
+        android:id="@+id/big_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="2dp" />
+
     <com.dbychkov.words.widgets.RecyclerViewWithEmptyView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="?android:attr/listDivider"
         android:scrollbars="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    </com.dbychkov.words.widgets.RecyclerViewWithEmptyView>
+
+
+
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scroll"
+        android:layout_marginTop="130dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
 
         <TextView
             android:id="@+id/list_empty"
