@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
@@ -58,6 +59,14 @@
                     app:progress_reached_color="@color/colorAccent"
                     app:progress_text_color="@color/white"
                     app:progress_unreached_color="@color/white" />
+                <FrameLayout
+                    android:layout_marginTop="100dp"
+
+                    android:id="@+id/big_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="2dp" />
 
             </RelativeLayout>
 
@@ -72,14 +81,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <FrameLayout
-        android:layout_marginTop="100dp"
 
-        android:id="@+id/big_ad_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:padding="2dp" />
 
     <com.dbychkov.words.widgets.RecyclerViewWithEmptyView
         android:id="@+id/list"

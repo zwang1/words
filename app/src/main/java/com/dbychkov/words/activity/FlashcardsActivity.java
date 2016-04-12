@@ -99,7 +99,6 @@ public abstract class FlashcardsActivity extends AbstractExpandingActivity
     private NativeAdManager nativeAdManager;
     private FrameLayout nativeAdContainer;
     /* 广告 Native大卡样式 */
-    private Button loadAdButton;
     private String mAdPosid = "1377100";
 
     private OrionNativeAdview mAdView = null;
