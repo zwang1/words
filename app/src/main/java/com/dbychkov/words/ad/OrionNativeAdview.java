@@ -50,7 +50,7 @@ public class OrionNativeAdview extends FrameLayout {
     }
 
     public void initAdView(INativeAd ad) {
-        mNativeAdView = View.inflate(mContext, R.layout.native_ad_layout, this);
+        mNativeAdView = View.inflate(mContext, R.layout.native_ad_layout_small, this);
 
         String iconUrl = ad.getAdIconUrl();
         ImageView iconImageView = (ImageView) mNativeAdView
