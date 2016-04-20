@@ -166,7 +166,7 @@ public abstract class FlashcardsActivity extends AbstractExpandingActivity
         initHeader();
         nativeAdContainer = (FrameLayout) findViewById(R.id.big_ad_container);
         initNativeAd();
-        nativeAdManager.loadAd();
+        //nativeAdManager.loadAd();
     }
 
     @Override

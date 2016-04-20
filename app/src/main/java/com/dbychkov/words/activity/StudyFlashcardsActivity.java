@@ -107,6 +107,7 @@ public class StudyFlashcardsActivity extends BaseActivity implements StudyFlashc
     private String mAdPosid = "1377100";
 
     private OrionNativeAdview mAdView = null;
+    private static int count = 0;
 
 
     public static Intent createIntent(Context context, Long lessonId) {
@@ -124,9 +125,10 @@ public class StudyFlashcardsActivity extends BaseActivity implements StudyFlashc
         initToolbar();
         initButtons();
         initPresenter();
+        count = 0;
         nativeAdContainer = (FrameLayout) findViewById(R.id.big_ad_container);
         initNativeAd();
-        nativeAdManager.loadAd();
+        //nativeAdManager.loadAd();
     }
 
     private void initExtra() {
@@ -193,6 +195,7 @@ public class StudyFlashcardsActivity extends BaseActivity implements StudyFlashc
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         onBackPressed();
+
                     }
                 })
                 .setCancelable(false)
@@ -226,6 +229,10 @@ public class StudyFlashcardsActivity extends BaseActivity implements StudyFlashc
     @OnClick(R.id.knowButton)
     public void onKnowButtonClicked() {
         presenter.knowWordButtonPressed();
+        count ++;
+        if(count % 10 == 0)
+            nativeAdManager.loadAd();
+
     }
 
     @OnClick(R.id.dontKnowButton)
